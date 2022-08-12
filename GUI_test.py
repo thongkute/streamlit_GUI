@@ -6,7 +6,7 @@ import numpy as np
 #------Page setup-------
 st.set_page_config(
      page_title="Realtime Translator",
-     page_icon= r'.\icon\page_icon.png',
+     page_icon= './icon/page_icon.png',
      layout="wide",
      initial_sidebar_state="expanded",
      menu_items={
@@ -19,10 +19,10 @@ st.set_page_config(
 #------Logo-------
 left, _, right = st.columns(3)
 with left:
-    st.image(r'.\icon\FRA_UAS_colored.png')
+    st.image('./icon/FRA_UAS_colored.png')
     st.markdown("""---""") 
 with right:
-    st.image(r'.\icon\vgu_logo.png')
+    st.image('./icon/vgu_logo.png')
     st.markdown("""---""") 
 
 # ------Title-------
@@ -38,9 +38,9 @@ with but:
 
 with img:
     if speaker:
-        st.image(r'.\icon\mute.png')
+        st.image('./icon/mute.png')
     else:
-        st.image(r'.\icon\unmute.png')
+        st.image('./icon/unmute.png')
         
 # ------Main-------
 # ger, but, eng = st.columns([5,0.5,5])
